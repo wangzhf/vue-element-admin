@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <div :class="['navbar', isMobile ? 'navbar-mobile' : '']">
     <hamburger :toggle-click="toggleSideBar" :is-active="sidebar.opened" class="hamburger-container"/>
 
     <breadcrumb class="breadcrumb-container"/>
@@ -74,7 +74,10 @@ export default {
       'name',
       'avatar',
       'device'
-    ])
+    ]),
+    isMobile() {
+      return this.device === 'mobile'
+    }
   },
   methods: {
     toggleSideBar() {
@@ -90,6 +93,10 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
+.navbar-mobile {
+  display: flex;
+  justify-content: space-between;
+}
 .navbar {
   height: 50px;
   line-height: 50px;

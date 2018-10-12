@@ -52,6 +52,7 @@ export default {
 <style rel="stylesheet/scss" lang="scss" scoped>
   .app-breadcrumb.el-breadcrumb {
     display: inline-block;
+    overflow: -webkit-paged-x;
     font-size: 14px;
     line-height: 50px;
     margin-left: 10px;
