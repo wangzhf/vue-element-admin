@@ -23,16 +23,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/styles/variables.scss';
+
 .logo {
-  height: 50px;
+  height: $navBarHeight;
   width: 100%;
   background-color: white;
   p {
-    height: 50px;
+    height: $navBarHeight;
     width: 100%;
     font-size: 20px;
     margin: 0;
-    line-height: 50px;
+    line-height: $navBarHeight;
     text-align: center;
   }
 }

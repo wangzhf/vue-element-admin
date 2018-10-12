@@ -66,13 +66,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '@/styles/variables.scss';
+
 .screenfull-svg {
   display: inline-block;
   cursor: pointer;
   fill: #5a5e66;;
   width: 20px;
   height: 20px;
-  vertical-align: 10px;
+  vertical-align: $screenfullSvgVerticalAlign;
 }
 </style>

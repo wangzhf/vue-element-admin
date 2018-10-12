@@ -93,17 +93,19 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
+@import '@/styles/variables.scss';
+
 .navbar-mobile {
   display: flex;
   justify-content: space-between;
 }
 .navbar {
-  height: 50px;
-  line-height: 50px;
+  height: $navBarHeight;
+  line-height: $navBarHeight;
   border-radius: 0px !important;
   .hamburger-container {
-    line-height: 58px;
-    height: 50px;
+    line-height: $navBarHeight + 8px;
+    height: $navBarHeight;
     float: left;
     padding: 0 10px;
   }
@@ -131,24 +133,24 @@ export default {
       vertical-align: top;
     }
     .theme-switch {
-      vertical-align: 15px;
+      vertical-align: $themeSwitchVerticalAlign;
     }
     .avatar-container {
-      height: 50px;
+      height: $navBarHeight;
       margin-right: 30px;
       .avatar-wrapper {
         cursor: pointer;
         margin-top: 5px;
         position: relative;
         .user-avatar {
-          width: 40px;
-          height: 40px;
+          width: $userAvatarWidth;
+          height: $userAvatarHeight;
           border-radius: 10px;
         }
         .el-icon-caret-bottom {
           position: absolute;
-          right: -20px;
-          top: 25px;
+          right: $userAvatarCaretRight;
+          top: $userAvatarCaretTop;
           font-size: 12px;
         }
       }

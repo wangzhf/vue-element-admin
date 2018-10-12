@@ -50,11 +50,13 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
+  @import '@/styles/variables.scss';
+
   .app-breadcrumb.el-breadcrumb {
     display: inline-block;
     overflow: -webkit-paged-x;
     font-size: 14px;
-    line-height: 50px;
+    line-height: $navBarHeight;
     margin-left: 10px;
     .no-redirect {
       color: #97a8be;

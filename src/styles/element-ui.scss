@@ -80,3 +80,20 @@
     display: block
   }
 }
+
+// theme选择器大小
+.el-color-picker--medium .el-color-picker__trigger {
+  width: $colorPickerWidth;
+  height: $colorPickerHeight;
+}
+
+// 菜单高度
+.el-menu-item, .el-submenu__title {
+  height: $menuItemHeight;
+  line-height: $menuItemHeight;
+}
+// 子菜单高度
+.el-submenu .el-menu-item {
+  height: $submenuItemHeight;
+  line-height: $submenuItemHeight;
+}
